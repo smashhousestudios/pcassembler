@@ -2,7 +2,7 @@ import React from 'react';
 import { SafeAreaView } from 'react-native';
 import { Divider, Icon, Layout, Text, TopNavigation, TopNavigationAction } from '@ui-kitten/components';
 
-const DetailsScreen = ({ navigation }) => {
+const BuildScreen = ({ navigation }) => {
 
   const navigateBack = () => {
     navigation.goBack();
@@ -17,10 +17,10 @@ const DetailsScreen = ({ navigation }) => {
       {/* <TopNavigation title='MyApp' alignment='center' accessoryLeft={BackAction}/> */}
       <Divider/>
       <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text category='h1'>Details Screen</Text>
+        <Text category='h1'>Build Your Own PC</Text>
       </Layout>
     </SafeAreaView>
   );
 };
 
-export default DetailsScreen;
+export default BuildScreen;

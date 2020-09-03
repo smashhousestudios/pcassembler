@@ -1,1 +1,7 @@
 pcassemblerscom.pem
+connect.sh
+PCAssemblers/node_modules/
+Server/config/
+Server/node_modules/
+Server/.env
+PCAssemblers/src/images/

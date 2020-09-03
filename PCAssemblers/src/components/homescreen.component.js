@@ -5,8 +5,14 @@ import { ApplicationProvider, Layout, Text, Divider, TopNavigation, Button } fro
 
 const HomeScreen = ({navigation}) => {
 
-    const navigateDetails = () => {
-        navigation.navigate('Details');
+    const navigateBuild = () => {
+        navigation.navigate('Build');
+      };
+
+      const navigateParts = () => {
+        navigation.navigate('Parts', { screen: 'PartsScreen' });
+        // navigation.navigate('PartsScreen');
+
       };
 
 
@@ -15,7 +21,9 @@ const HomeScreen = ({navigation}) => {
             {/* <TopNavigation title='MyApp' alignment='center'/> */}
             <Divider/>
             <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                <Button onPress={navigateDetails}>OPEN DETAILS</Button>
+                <Button onPress={navigateBuild} style={{padding: 10, margin: 20}}>Build Your Pc</Button>
+                <Divider/>
+                <Button onPress={navigateParts}  style={{padding: 10}}>Find Parts</Button>
             </Layout>
         </SafeAreaView>
     );
